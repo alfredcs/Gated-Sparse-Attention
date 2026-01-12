@@ -15,7 +15,7 @@ This repository provides an official implementation of **Gated Sparse Attention 
 - **Superior length extrapolation** (31.65 → 58.82 on RULER @ 128K)
 
 <p align="center">
-  <img src="assets/gsa_architecture.svg" alt="GSA Architecture" width="800"/>
+  <img src="images/gsa.png" alt="GSA Architecture" width="800"/>
 </p>
 
 ## 📋 Table of Contents
