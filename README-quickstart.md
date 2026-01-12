@@ -2,6 +2,12 @@
 
 Get up and running with Gated Sparse Attention in 5 minutes.
 
+**Quick Links:**
+- [Main README](README.md) - Project overview and benchmark results
+- [Development Guide](README-development.md) - Architecture details, training, and evaluation
+
+---
+
 ## Installation
 
 ```bash
@@ -383,6 +389,8 @@ gated-sparse-attention/
 
 ## Links
 
+- [Main README](README.md) - Project overview and benchmark results
+- [Development Guide](README-development.md) - Architecture details and implementation
 - Full documentation: `docs/`
 - Training configs: `training/configs/`
 - Benchmark code: `evaluation/benchmarks/`
