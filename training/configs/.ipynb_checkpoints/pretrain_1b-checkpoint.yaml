@@ -1,0 +1,69 @@
+# Training configuration for GSA 1B model pre-training
+
+model:
+  d_model: 1024      # Reduced from 2048 for 44GB GPU
+  n_layers: 16       # Reduced from 24
+  n_heads: 8         # Reduced from 16
+  n_kv_heads: 2      # Reduced from 4
+  d_ffn: 2752        # Reduced from 5504
+  vocab_size: 151936 # Qwen2.5 vocab size
+  max_position_embeddings: 32768  # Reduced from 131072
+
+  # GSA specific configuration
+  gsa:
+    d_indexer: 64
+    n_indexer_heads: 4
+    k_base: 1024     # Reduced from 2048
+    k_min: 128       # Reduced from 256
+    k_max: 2048      # Reduced from 4096
+    use_value_gate: true
+    use_output_gate: true
+    use_adaptive_k: true
+
+training:
+  # Optimizer
+  optimizer: adamw
+  learning_rate: 3.0e-4
+  min_learning_rate: 3.0e-5
+  weight_decay: 0.1
+  beta1: 0.9
+  beta2: 0.95
+  eps: 1.0e-8
+
+  # Schedule
+  warmup_steps: 2000
+  lr_scheduler: cosine
+  max_steps: 100000
+
+  # Batch size (memory-efficient for 44GB GPU)
+  micro_batch_size: 1         # Small batch for memory efficiency
+  gradient_accumulation_steps: 32  # Large accumulation to maintain effective batch
+  global_batch_size: 128      # micro * grad_accum * num_gpus = 1 * 32 * 4 = 128
+
+  # Sequence length (matches packed data)
+  max_seq_len: 4096           # Must match data/packed/metadata.json seq_len
+
+  # Precision
+  precision: bf16
+  gradient_checkpointing: true
+
+  # Stability
+  grad_clip: 1.0
+
+  # GSA specific
+  indexer_warmup_steps: 1000
+  indexer_lr_multiplier: 10.0
+
+data:
+  # Use local pre-tokenized and packed data (faster, no rate limits)
+  data_dir: data/packed  # Set to null to use HuggingFace dataset
+  dataset: cerebras/SlimPajama-627B  # Fallback if data_dir not found
+  tokenizer: Qwen/Qwen2.5-7B
+  num_workers: 4
+  use_packing: true
+
+logging:
+  project: gsa-pretrain
+  log_interval: 10
+  eval_interval: 1000
+  save_interval: 5000
