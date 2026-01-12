@@ -477,16 +477,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Qwen Team at Alibaba for the gated attention research
 - The open-source community for foundational tools and frameworks
 
----
-
-## 📧 Contact
-
-- **Issues**: Please open a GitHub issue for bugs or feature requests
-- **Email**: your-email@example.com
-- **Twitter**: [@your_handle](https://twitter.com/your_handle)
-
----
-
-<p align="center">
-  Made with ❤️ by the GSA Team
-</p>
