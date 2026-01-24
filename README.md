@@ -385,25 +385,6 @@ Token Position →          Token Position →
 
 ---
 
-## 🏪 Model Zoo
-
-### Pre-trained Models
-
-| Model | Parameters | Training Tokens | Context | Download |
-|-------|------------|-----------------|---------|----------|
-| GSA-1B | 1.0B | 100B | 4K | [🤗 HuggingFace](https://huggingface.co/your-org/gsa-1b) |
-| GSA-1.7B | 1.7B | 400B | 4K | [🤗 HuggingFace](https://huggingface.co/your-org/gsa-1.7b) |
-| GSA-7B | 7.0B | 1T | 8K | [🤗 HuggingFace](https://huggingface.co/your-org/gsa-7b) |
-| GSA-7B-128K | 7.0B | 1T + 100B | 128K | [🤗 HuggingFace](https://huggingface.co/your-org/gsa-7b-128k) |
-
-### Fine-tuned Models
-
-| Model | Base | Fine-tune Data | Task | Download |
-|-------|------|----------------|------|----------|
-| GSA-7B-Chat | GSA-7B | 100K conversations | Chat | [🤗 HuggingFace](https://huggingface.co/your-org/gsa-7b-chat) |
-| GSA-7B-Code | GSA-7B | 50B code tokens | Code | [🤗 HuggingFace](https://huggingface.co/your-org/gsa-7b-code) |
-
----
 
 ## 📚 Documentation
 
