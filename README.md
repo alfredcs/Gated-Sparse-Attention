@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch 2.2+](https://img.shields.io/badge/PyTorch-2.2+-ee4c2c.svg)](https://pytorch.org/)
-[![arXiv](https://img.shields.io/badge/arXiv-2505.XXXXX-b31b1b.svg)](https://arxiv.org/)
+[![arXiv](https://img.shields.io/badge/arXiv-2601.15305-b31b1b.svg)](https://arxiv.org/)
 
 > **Gated Sparse Attention: Combining Computational Efficiency with Training Stability for Long-Context Language Models**
 
@@ -437,11 +437,11 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 If you find this work useful, please cite our paper:
 
 ```bibtex
-@article{gsa2025,
+@article{gsa2601v1,
   title={Gated Sparse Attention: Combining Computational Efficiency with Training Stability for Long-Context Language Models},
   author={Your Name and Collaborators},
-  journal={arXiv preprint arXiv:2505.XXXXX},
-  year={2025}
+  journal={arXiv preprint arXiv:2601.15305},
+  year={2026}
 }
 ```
 
