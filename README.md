@@ -407,8 +407,6 @@ Token Position →          Token Position →
 
 ## 📚 Documentation
 
-Full documentation is available at [https://gsa.readthedocs.io](https://gsa.readthedocs.io)
-
 - **[README-quickstart.md](README-quickstart.md)**: Quick start examples and usage patterns
 - **[README-development.md](README-development.md)**: Complete development guide including:
   - Detailed architecture documentation

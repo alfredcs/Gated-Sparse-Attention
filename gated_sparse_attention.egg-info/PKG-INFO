@@ -5,7 +5,6 @@ Summary: Gated Sparse Attention: Combining Computational Efficiency with Trainin
 Author-email: GSA Team <gsa@example.com>
 License: MIT
 Project-URL: Homepage, https://github.com/your-org/gated-sparse-attention
-Project-URL: Documentation, https://gsa.readthedocs.io
 Project-URL: Repository, https://github.com/your-org/gated-sparse-attention
 Project-URL: Issues, https://github.com/your-org/gated-sparse-attention/issues
 Keywords: attention,transformer,sparse,gated,long-context,nlp,deep-learning
@@ -1662,8 +1661,6 @@ pytest tests/test_kernels.py --benchmark-only
 ---
 
 ## 📚 Documentation
-
-Full documentation is available at [https://gsa.readthedocs.io](https://gsa.readthedocs.io)
 
 - [Getting Started Guide](docs/getting_started.md)
 - [Architecture Deep Dive](docs/architecture.md)

@@ -67,7 +67,6 @@ all = [
 
 [project.urls]
 Homepage = "https://github.com/alfredcs/gated-sparse-attention"
-Documentation = "https://gsa.readthedocs.io"
 Repository = "https://github.com/alfredcs/gated-sparse-attention"
 Issues = "https://github.com/alfredcs/gated-sparse-attention/issues"
 
